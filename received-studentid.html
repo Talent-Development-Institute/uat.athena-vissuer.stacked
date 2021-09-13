@@ -9,7 +9,7 @@
     <meta name="description" content="">
     <meta name="author" content="">
 
-    <title>StackEd - Issued Credentials</title>
+    <title>StackEd - John Doe</title>
 
     <!-- Custom fonts for this template -->
     <link href="vendor/fontawesome-free/css/all.min.css" rel="stylesheet" type="text/css">
@@ -34,7 +34,7 @@
         <ul class="navbar-nav bg-gradient-primary sidebar sidebar-dark accordion" id="accordionSidebar">
 
             <!-- Sidebar - Brand -->
-            <a class="sidebar-brand d-flex align-items-center justify-content-center" href="index.html">
+            <a class="sidebar-brand d-flex align-items-center justify-content-center" href="dashboard-verifier.html">
                 <div class="sidebar-brand-icon">
                     <img src="/img/logo-simple-white.png" alt="Not found">
                 </div>
@@ -49,23 +49,24 @@
 
             <!-- Heading -->
             <div class="sidebar-heading">
-                Issuer Tools
+                Verifier Tools
             </div>
 
-            <!-- Requested Credential Menu Item -->
+            <!-- Create Verification Request Menu Item-->
             <li class="nav-item">
-                <a class="nav-link" href="dashboard-issuer.html">
+                <a class="nav-link active" href="dashboard-verifier.html">
                     <i class="fas fa-fw fa-chart-area"></i>
-                    <span>Requested Credentials</span></a>
+                    <span>Create Request</span></a>
             </li>
 
-            <!-- Issued Credential Menu Item -->
+            <!-- Received Credentials Menu Item -->
+
             <li class="nav-item active">
-                <a class="nav-link" href="charts.html">
+                <a class="nav-link" href="received-credentials.html">
                     <i class="fas fa-fw fa-chart-area"></i>
-                    <span>Issued Credentials</span></a>
+                    <span>Received Credentials</span></a>
             </li>
-           
+            
             <!-- Divider -->
             <hr class="sidebar-divider d-none d-md-block">
 
@@ -90,6 +91,8 @@
                     <button id="sidebarToggleTop" class="btn btn-link d-md-none rounded-circle mr-3">
                         <i class="fa fa-bars"></i>
                     </button>
+
+                    <a href="received-credentials.html" class="card-body">Back</a>
 
                     <!-- Topbar Navbar -->
                     <ul class="navbar-nav ml-auto">
@@ -118,7 +121,7 @@
                             </div>
                         </li>
 
-                         <!-- Nav Item - Alerts -->
+                    <!-- Nav Item - Alerts -->
                          <li class="nav-item dropdown no-arrow mx-1">
                             <a class="nav-link dropdown-toggle" href="#" id="alertsDropdown" role="button"
                                 data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
@@ -140,7 +143,7 @@
                                     </div>
                                     <div>
                                         <div class="small text-gray-500">December 12, 2019</div>
-                                        <span class="font-weight-bold">A new credential issuance request from john@thei.com</span>
+                                        <span class="font-weight-bold">A new credential was received from john@thei.com</span>
                                     </div>
                                 </a>
                                 <a class="dropdown-item d-flex align-items-center" href="#">
@@ -151,7 +154,7 @@
                                     </div>
                                     <div>
                                         <div class="small text-gray-500">December 12, 2019</div>
-                                        <span class="font-weight-bold">A new credential issuance request from tiger@thei.com</span>
+                                        <span class="font-weight-bold">A new credential was received from tiger@thei.com</span>
                                     </div>
                                 </a>
                                 <a class="dropdown-item d-flex align-items-center" href="#">
@@ -162,7 +165,7 @@
                                     </div>
                                     <div>
                                         <div class="small text-gray-500">December 12, 2019</div>
-                                        <span>A new credential issuance request from lily@thei.com</span>
+                                        <span>A new credential was received from lily@thei.com</span>
                                     </div>
                                 </a>
                             </div>
@@ -188,118 +191,66 @@
                                 </a>
                             </div>
                         </li>
-
                     </ul>
 
                 </nav>
                 <!-- End of Topbar -->
 
-                <!-- Begin Page Content -->
-                <div class="container-fluid">
+                  <!-- Begin Page Content -->
+                  <div class="container-fluid">
+                    <div class="container">
 
-                    <!-- Page Heading -->
-                    <h1 class="h3 mb-2 text-gray-800">Issued Credentials</h1>
-                    <p class="mb-4">Below is a list of official credentials that you have issued on behalf of [ENTERORGANISATIONNAME]</p>
-
-                    <!-- DataTales Example -->
-                    <div class="card shadow mb-4">
-                        <div class="card-body">
-                            <div class="table-responsive">
-                                <table class="table table-bordered" id="dataTable" width="100%" cellspacing="0">
-                                    <thead>
-                                        <tr>
-                                            <th>Name</th>
-                                            <th>Email</th>
-                                            <th>Credential type</th>
-                                            <th>Issuance date</th>
-                                        </tr>
-                                    </thead>
-                                    <tbody>
-                                        <tr>
-                                            <td>John Doe</td>
-                                            <td>john@thei.com</td>
-                                            <td>Student ID</td>
-                                            <td>2011/04/25</td>
-                                        </tr>
-                                        <tr>
-                                            <td>Tiger Nixon</td>
-                                            <td>tiger@thei.com</td>
-                                            <td>Student ID</td>
-                                            <td>2011/04/25</td>
-                                        </tr>
-                                        <tr>
-                                            <td>Tiger Nixon</td>
-                                            <td>tiger@thei.com</td>
-                                            <td>Student ID</td>
-                                            <td>2011/04/25</td>
-                                        </tr>
-                                        <tr>
-                                            <td>Tiger Nixon</td>
-                                            <td>tiger@thei.com</td>
-                                            <td>Student ID</td>
-                                            <td>2011/04/25</td>
-                                        </tr>
-                                        <tr>
-                                            <td>Tiger Nixon</td>
-                                            <td>tiger@thei.com</td>
-                                            <td>Student ID</td>
-                                            <td>2011/04/25</td>
-                                        </tr>
-                                        <tr>
-                                            <td>Tiger Nixon</td>
-                                            <td>tiger@thei.com</td>
-                                            <td>Student ID</td>
-                                            <td>2011/04/25</td>
-                                        </tr>
-                                        <tr>
-                                            <td>Tiger Nixon</td>
-                                            <td>tiger@thei.com</td>
-                                            <td>Student ID</td>
-                                            <td>2011/04/25</td>
-                                        </tr>
-                                        <tr>
-                                            <td>Tiger Nixon</td>
-                                            <td>tiger@thei.com</td>
-                                            <td>Student ID</td>
-                                            <td>2011/04/25</td>
-                                        </tr>
-                                        <tr>
-                                            <td>Tiger Nixon</td>
-                                            <td>tiger@thei.com</td>
-                                            <td>Student ID</td>
-                                            <td>2011/04/25</td>
-                                        </tr>
-                                        <tr>
-                                            <td>Tiger Nixon</td>
-                                            <td>tiger@thei.com</td>
-                                            <td>Student ID</td>
-                                            <td>2011/04/25</td>
-                                        </tr>
-                                        <tr>
-                                            <td>Tiger Nixon</td>
-                                            <td>tiger@thei.com</td>
-                                            <td>Student ID</td>
-                                            <td>2011/04/25</td>
-                                        </tr>
-                                        <tr>
-                                            <td>Tiger Nixon</td>
-                                            <td>tiger@thei.com</td>
-                                            <td>Student ID</td>
-                                            <td>2011/04/25</td>
-                                        </tr>
-                                        </tr>
-                                    </tbody>
-                                </table>
+                        <div class="row">
+                            <div class="col-lg-6 mb-4">
+                                <div class="card bg-primary text-white shadow">
+                                    <div class="card-body">
+                                        Self Declaration
+                                    </div>
+                                </div>
                             </div>
                         </div>
-                    </div>
 
+                             <!-- Credential Schema -->
+                             <div class="card shadow mb-4">
+                                <div class="card-header py-3">
+                                    <h6 class="m-0 font-weight-bold text-primary">Student ID Schema</h6>
+                                    <hr class="sidebar-divider my-0">
+                                    <sub>john@example.com</sub>
+                                </div>
+                                <div class="card-body">
+                                    <sub>First Name</sub>
+                                        <p>John</p>
+                                    <sub>Last Name</sub>
+                                        <p>Doe</p>
+                                    <sub>Insitute / Place of Study</sub>
+                                        <p>Example University</p>
+                                    <sub>Student ID</sub>
+                                        <p>424242</p>
+                                    <sub>Expiry Date</sub>
+                                        <p>12/24</p>  
+                                    <sub style="right: px;">Criteria Evaluation</sub>
+                                    <div class="my-2"></div>
+                                    <a href="received-studentid passed.html" class="btn btn-success btn-icon-split">
+                                        <span class="icon text-white-50">
+                                            <i class="fas fa-check"></i>
+                                        </span>
+                                        <span class="text">Pass</span>
+                                    </a>
+                                    <div class="my-2"></div>
+                                    <a href="received-studentid failed.html" class="btn btn-danger btn-icon-split">
+                                        <span class="icon text-white-50">
+                                            <i class="fas fa-trash"></i>
+                                        </span>
+                                        <span class="text">Fail</span>
+                                    </a>                         
+                                </div>
+                            </div>
+                
                 </div>
                 <!-- /.container-fluid -->
 
-            </div>
-            <!-- End of Main Content -->
-
+        </div>
+        <!-- End of Main Content -->
             <!-- Footer -->
             <footer class="sticky-footer bg-white">
                 <div class="container my-auto">
@@ -335,7 +286,7 @@
                 <div class="modal-body">Select "Logout" below if you are ready to end your current session.</div>
                 <div class="modal-footer">
                     <button class="btn btn-secondary" type="button" data-dismiss="modal">Cancel</button>
-                    <a class="btn btn-primary" href="dashboard-issuer.html">Logout</a>
+                    <a class="btn btn-primary" href="index.html">Logout</a>
                 </div>
             </div>
         </div>
